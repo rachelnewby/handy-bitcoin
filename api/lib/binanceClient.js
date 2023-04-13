@@ -1,5 +1,3 @@
-// curl -X GET "https://api.binance.com/api/v3/avgPrice?symbol=BTCUSDT"
-
 class BinanceClient {
   getBitcoinPrice() {
     const url = "https://api.binance.com/api/v3/avgPrice?symbol=BTCUSDT";
