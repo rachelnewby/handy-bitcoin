@@ -7,6 +7,9 @@ class BinanceClient {
       .then((response) => response.json())
       .then((price) => {
         return price;
+      })
+      .catch((error) => {
+        return error;
       });
   }
 }

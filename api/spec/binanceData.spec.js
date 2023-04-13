@@ -11,4 +11,12 @@ describe("getBitcoinPrice", () => {
       expect(price).toEqual(mockResponse);
     });
   });
+
+  it("returns an error if request is not fulfilled", () => {
+    const client = new BinanceClient();
+    fetch.mockReject("Error");
+    client.getBitcoinPrice().then((error) => {
+      expect(error).toEqual("Error");
+    });
+  });
 });
