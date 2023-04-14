@@ -9,7 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "13.3.0",
+    "@tensorflow/tfjs": "^4.4.0",
+    "handtrackjs": "^0.1.5",
+    "next": "^13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   }
