@@ -2,14 +2,14 @@ import React, { useState, useRef, useEffect } from "react";
 import * as handTrack from "handtrackjs";
 
 const modelParams = {
-  flipHorizontal: false,
+  flipHorizontal: true,
   outputStride: 16,
   imageScaleFactor: 1,
   maxNumBoxes: 20,
   iouThreshold: 0.2,
   scoreThreshold: 0.6,
   modelType: "ssd320fpnlite",
-  modelSize: "large",
+  modelSize: "small",
   bboxLineWidth: "2",
   fontSize: 17,
 };
