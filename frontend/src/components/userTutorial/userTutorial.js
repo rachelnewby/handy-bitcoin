@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import UserSitting from "../images/user.png";
 import OpenTrade from "../images/openTrade.png";
 import CloseTrade from "../images/closeTrade.png";
+import "./userTutorial.css";
 
 const UserTutorial = () => {
   return (
