@@ -7,15 +7,19 @@ const UserTutorial = () => {
     <Carousel id="user-tutorial">
       <Carousel.Item>
         <img
-          className="first-image"
+          className="carousel-image"
           src={UserSitting}
           id="user-img"
           alt="First slide"
         />
       </Carousel.Item>
       <Carousel.Caption>
-        <h3>First slide label</h3>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h3 className="image-title" id="first-image-caption">
+          To Get Started
+        </h3>
+        <p className="image-instructions" id="first-image-instructions">
+          Sit facing your webcam
+        </p>
       </Carousel.Caption>
     </Carousel>
   );

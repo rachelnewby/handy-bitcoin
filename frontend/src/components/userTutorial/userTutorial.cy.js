@@ -13,6 +13,11 @@ describe("UserTutorial", () => {
       .and(($img) => {
         expect($img[0].naturalWidth).to.be.greaterThan(0);
       });
-    // cy.get(".first-image-caption").should("exist");
+    cy.get("#first-image-caption").should("exist");
+    cy.get("#first-image-caption").should("have.text", "To Get Started");
+    cy.get("#first-image-instructions").should(
+      "have.text",
+      "Sit facing your webcam"
+    );
   });
 });
