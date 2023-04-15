@@ -1,5 +1,17 @@
 .carousel-image {
-  height: 300px;
-  width: 450px;
-  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.carousel-item {
+  height: 100vh;
+}
+
+#user-tutorial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
