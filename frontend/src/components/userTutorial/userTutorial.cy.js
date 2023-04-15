@@ -8,10 +8,11 @@ describe("UserTutorial", () => {
 
   it("first image of user sat in front of screen loads with title and text", () => {
     cy.mount(<UserTutorial />);
-    cy.get(".first-image")
+    cy.get("#user-img")
       .should("be.visible")
       .and(($img) => {
         expect($img[0].naturalWidth).to.be.greaterThan(0);
       });
+    // cy.get(".first-image-caption").should("exist");
   });
 });
