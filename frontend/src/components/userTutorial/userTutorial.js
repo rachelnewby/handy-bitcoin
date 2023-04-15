@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import "bootstrap/dist/css/bootstrap.min.css";
 import UserSitting from "../images/user.png";
 import OpenTrade from "../images/openTrade.png";
+import CloseTrade from "../images/closeTrade.png";
 
 const UserTutorial = () => {
   return (
@@ -14,7 +15,6 @@ const UserTutorial = () => {
           id="user-img"
           alt="First slide"
         />
-
         <Carousel.Caption>
           <h3 className="image-title" id="first-image-caption">
             Step 1
@@ -24,7 +24,6 @@ const UserTutorial = () => {
           </p>
         </Carousel.Caption>
       </Carousel.Item>
-
       <Carousel.Item interval={1000}>
         <img
           className="carousel-image"
@@ -32,13 +31,28 @@ const UserTutorial = () => {
           id="open-trade-img"
           alt="Second slide"
         />
-
         <Carousel.Caption>
           <h3 className="image-title" id="second-image-caption">
             Step 2
           </h3>
           <p className="image-instructions" id="second-image-instructions">
             Raise your hand with an open palm to place a trade
+          </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={1000}>
+        <img
+          className="carousel-image"
+          src={CloseTrade}
+          id="close-trade-img"
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h3 className="image-title" id="third-image-caption">
+            Step 3
+          </h3>
+          <p className="image-instructions" id="third-image-instructions">
+            Raise your hand with a closed fist to close a trade
           </p>
         </Carousel.Caption>
       </Carousel.Item>

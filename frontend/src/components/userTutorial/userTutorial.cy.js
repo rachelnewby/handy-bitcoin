@@ -33,4 +33,17 @@ describe("UserTutorial", () => {
       "Step 2"
     );
   });
+
+  it("third image of hand raised to closed trade loads with title and text", () => {
+    cy.mount(<UserTutorial />);
+    cy.get("#close-trade-img").should("exist");
+    cy.get(".active > .carousel-caption > #third-image-instructions").should(
+      "have.text",
+      "Raise your hand with a closed fist to close a trade"
+    );
+    cy.get(".active > .carousel-caption > #third-image-caption").should(
+      "have.text",
+      "Step 3"
+    );
+  });
 });
