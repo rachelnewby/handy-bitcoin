@@ -15,3 +15,16 @@
   align-items: center;
   height: 100vh;
 }
+
+.modal-dialog {
+  max-width: 100%;
+  margin: 0;
+}
+
+.modal-content {
+  border: none;
+}
+
+.modal-body {
+  padding: 0;
+}
