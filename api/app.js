@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
 const BinanceClient = require("./lib/binanceClient");
+const cors = require("cors");
 
 const binanceClient = new BinanceClient();
+app.use(cors());
 
 app.get("/", async (req, res) => {
   try {
