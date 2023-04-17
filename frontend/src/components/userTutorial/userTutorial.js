@@ -11,7 +11,12 @@ const UserTutorial = () => {
   const [show, setShow] = useState(true);
 
   return (
-    <Modal show={show} onHide={() => setShow(false)}>
+    <Modal
+      size="lg"
+      show={show}
+      onHide={() => setShow(false)}
+      id="tutorial-modal"
+    >
       <Modal.Header closeButton>
         <Modal.Title>Welcome to Handy Bitcoin!</Modal.Title>
       </Modal.Header>
